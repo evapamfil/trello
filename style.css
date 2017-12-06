@@ -1,0 +1,259 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: sans-serif;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+.content-header-left, .content-header-right{
+    width: 40%;
+}
+.content-header-right{
+    justify-content: flex-end;
+}
+.content-header-left{
+    justify-content: flex-start;
+}
+.bold{
+    font-weight:700;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+.btn-header {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.search input{
+    border: none;
+}
+.content-header-middle img{
+    width: 100px;
+}
+.carre{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+    justify-content: center;
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+}
+.content-header-right svg{
+    margin-left:10px;
+}
+
+
+/* MENU BURGER */
+#btn-burger:hover, #btn-burger:focus{
+    background-color: #000;
+    color: #fff;
+}
+.menu-burger {
+    background: #CDCED2 ;
+    position: absolute;
+    top: 50px;
+    width: 300px;
+    transform: translateX(-100%);
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.menu-burger ul{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.menu-burger li{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: #fff;
+    margin-top: 5px;
+    padding-right:  10px;
+}
+.menu-burger li p{
+    display: inline;
+    margin-left: 10px;
+}
+.color{
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 5px 0px 0pc 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.title-nav{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.search-menu{
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+.menu-open{
+    transform: translateX(0%);
+    transition: all 0.5s;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+.display-block{
+    display: block;
+}
+/* HELPER CLASS COLOR */
+.green{
+    background-color: limegreen;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.grey{
+    background-color: grey;
+}
+.purple{
+    background-color: mediumpurple;
+}
+.pink{
+    background-color: deeppink;
+}
+.turquoise{
+    background-color: turquoise;
+}
+.camel{
+
+    background-color: sandybrown;
+}
+.purpledark{
+    background-color: purple;
+}
+.brown{
+    background-color: brown;
+}
+
+/*  MAIN */
+
+main{
+    background-color: #D9E0EA;
+    overflow-x: scroll;
+    min-height: 100vh;
+}
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #D9E0EA;
+}
+.header-main button{
+    background: #fff;
+    border: solid 1px #CDCED2 ;
+    padding: 5px;
+}
+.header-main button i{
+    color: #6184C3;
+    margin-right:5px;
+    font-size: 15px;
+}
+.header-main div{
+    display: flex;
+    align-items: center;
+}
+.header-main i{
+    color: #6184C3;
+    font-size: 25px;
+    margin-right: 5px;
+}
+.header-main p{
+    display: inline;
+}
+
+.container{
+
+    display: inline-flex;
+    flex-direction: row;
+
+}
+.column{
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 5px 10px;
+    height: 100%;
+}
+.header-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.card{
+    background-color: #D9E0EA;
+    margin: 5px 15px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+.card span{
+    color: #6184C3;
+    margin-right: 10px;
+}
+.card span i{
+    margin-right: 5px;
+}
+.card p{
+    margin-bottom: 20px;
+}
+.etiquette{
+    position: absolute;
+    right: 10px;
+    top:0;
+    width: 10px;
+    height: 20px;
+}
+.footer-column button{
+    border: none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
